@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallu Realtor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        .property-form, .contact-form, .user-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .property-form input, .property-form textarea, .contact-form input, .contact-form textarea, .user-form input, .user-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+        .property-form button, .contact-form button, .user-form button {
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .property-form button:hover, .contact-form button:hover, .user-form button:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mallu Realtor</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#browse">Browse Properties</a>
+        <a href="#post">Post a Property</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#about">About Us</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Welcome to Mallu Realtor</h2>
+        <p>Your trusted platform for buying, selling, leasing, and renting properties.</p>
+    </div>
+
+    <div class="container" id="browse">
+        <h2>Browse Properties</h2>
+        <!-- Property search and list goes here -->
+    </div>
+
+    <div class="container" id="post">
+        <h2>Post a Property</h2>
+        <form class="property-form">
+            <label for="property-title">Property Title:</label>
+            <input type="text" id="property-title" name="property-title" required>
+
+            <label for="property-description">Property Description:</label>
+            <textarea id="property-description" name="property-description" rows="4" required></textarea>
+
+            <label for="property-category">Category:</label>
+            <select id="property-category" name="property-category" required>
+                <option value="sale">For Sale</option>
+                <option value="rent">For Rent</option>
+                <option value="lease">For Lease</option>
+            </select>
+
+            <label for="property-photos">Photos:</label>
+            <input type="file" id="property-photos" name="property-photos" accept="image/*" multiple required>
+
+            <label for="property-video">Video:</label>
+            <input type="file" id="property-video" name="property-video" accept="video/*" required>
+
+            <button type="submit">Post Property</button>
+        </form>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Mallu Realtor is committed to providing the best real estate solutions. Whether you are looking to buy, sell, lease, or rent a property, we have you covered.</p>
+    </div>
+
+    <div class="container" id="register">
+        <h2>Register</h2>
+        <form class="user-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
